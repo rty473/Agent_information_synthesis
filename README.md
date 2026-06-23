@@ -28,6 +28,7 @@ The pipeline runs four agents in sequence, each building on the previous step's 
 ### Prerequisites
 
 - [Claude Code](https://claude.ai/code) installed and authenticated
+- When Agent 1 runs, it will prompt you to approve **WebSearch** and **WebFetch** tool permissions — you must approve these in the terminal for document collection to complete
 
 ### Run the Pipeline
 
