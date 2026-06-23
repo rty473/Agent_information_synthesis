@@ -17,13 +17,13 @@ Read `config.md` in the repo root. Extract the following:
 
 ## Input
 
-Read documents from `output_step_1/`. Process every file matching the pattern `document_N_step_1.md`. Documents can be processed in parallel — each is independent.
+Read documents from `outputs/output_step_1/`. Process every file matching the pattern `document_N_step_1.md`. Documents can be processed in parallel — each is independent.
 
 ---
 
 ## Output Location
 
-All output goes to `output_step_2/` in the repo root.
+All output goes to `outputs/output_step_2/` in the repo root.
 
 ---
 

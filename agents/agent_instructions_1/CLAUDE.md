@@ -23,7 +23,7 @@ Read `config.md` in the repo root. Extract the following before taking any actio
 
 ## Output Location
 
-All output goes to `output_step_1/` in the repo root.
+All output goes to `outputs/output_step_1/` in the repo root.
 
 ---
 

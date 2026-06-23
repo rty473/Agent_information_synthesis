@@ -21,11 +21,11 @@ Read `config.md` in the repo root. Extract the following:
 
 For each document N, read all three versions:
 
-- `output_step_1/document_N_step_1.md` — raw source
-- `output_step_2/document_N_step_2.md` — compressed summary
-- `output_step_3/document_N_step_3.md` — grading report and feedback
+- `outputs/output_step_1/document_N_step_1.md` — raw source
+- `outputs/output_step_2/document_N_step_2.md` — compressed summary
+- `outputs/output_step_3/document_N_step_3.md` — grading report and feedback
 
-Also read `output_step_1/agent1_run_log.md` for sourcing metadata used in the sourcing report.
+Also read `outputs/output_step_1/agent1_run_log.md` for sourcing metadata used in the sourcing report.
 
 ### How to use each version
 
@@ -38,7 +38,7 @@ Also read `output_step_1/agent1_run_log.md` for sourcing metadata used in the so
 
 ## Output Location
 
-All output goes to `output_step_4/` in the repo root.
+All output goes to `outputs/output_step_4/` in the repo root.
 
 ---
 

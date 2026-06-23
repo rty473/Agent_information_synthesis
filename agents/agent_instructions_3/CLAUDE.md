@@ -20,8 +20,8 @@ Read `config.md` in the repo root. Extract the following:
 
 For each document, read both versions together:
 
-- `output_step_1/document_N_step_1.md` — the original source
-- `output_step_2/document_N_step_2.md` — the summary to be graded
+- `outputs/output_step_1/document_N_step_1.md` — the original source
+- `outputs/output_step_2/document_N_step_2.md` — the summary to be graded
 
 Process each pair independently. All pairs can be graded in parallel.
 
@@ -29,7 +29,7 @@ Process each pair independently. All pairs can be graded in parallel.
 
 ## Output Location
 
-All output goes to `output_step_3/` in the repo root.
+All output goes to `outputs/output_step_3/` in the repo root.
 
 ---
 
