@@ -8,7 +8,7 @@ You are the second agent in a four-stage information synthesis pipeline. Your jo
 
 ## Before You Begin
 
-Read `config.md` in the repo root. Extract the following:
+Read `config/config.md`. Extract the following:
 
 - **Topic name and description** — maintain focus on this throughout
 - **Loose guidelines** — use these as directional focus when deciding what to keep and what to cut

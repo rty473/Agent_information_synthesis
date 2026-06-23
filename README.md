@@ -37,7 +37,7 @@ git clone <repo-url>
 cd agent_information_synthesis
 
 # Edit the config file for your topic
-open config.md
+open config/config.md
 
 # Run the full pipeline
 ./utilities/run_pipeline.sh
@@ -68,9 +68,9 @@ Open the Terminal panel, either in VSCode or your machine itself. If it's not sh
 cd /Users/your-username/repos/agent_information_synthesis
 ```
 
-**2. Edit `config.md` for your topic** (skip this step if running again on the same topic):
+**2. Edit `config/config.md` for your topic** (skip this step if running again on the same topic):
 ```bash
-open config.md
+open config/config.md
 ```
 Change the topic name, keywords, platform weights, and any other settings. Save the file before running.
 
@@ -89,7 +89,7 @@ This fires all four agents sequentially — you don't need to do anything betwee
 ```bash
 ./utilities/archive_run.sh
 ```
-This copies `config.md` and moves all outputs into `test_runs/run_N/` (auto-incrementing), then clears the output folders so the next run starts clean.
+This copies `config/config.md` and moves all outputs into `test_runs/run_N/` (auto-incrementing), then clears the output folders so the next run starts clean.
 
 ### Full workflow at a glance
 ```bash
@@ -97,7 +97,7 @@ This copies `config.md` and moves all outputs into `test_runs/run_N/` (auto-incr
 cd /Users/your-username/repos/agent_information_synthesis
 
 # Edit config for your topic
-open config.md
+open config/config.md
 
 # Run the pipeline (10–20 min)
 ./utilities/run_pipeline.sh
@@ -113,7 +113,7 @@ open outputs/output_step_4/
 
 ## Configuration
 
-All pipeline behavior is controlled by a single file: `config.md` in the repo root.
+All pipeline behavior is controlled by a single file: `config/config.md`.
 
 | Setting | Description |
 |---|---|
@@ -126,7 +126,7 @@ All pipeline behavior is controlled by a single file: `config.md` in the repo ro
 | `Grading Criteria` | Loose guidelines for Agents 2 & 4; strict rubric for Agent 3 |
 | `Final Memo Target Length` | Word/page target for the essentials memo |
 
-To run the pipeline on a new topic, edit `config.md` and run `./utilities/run_pipeline.sh`. No agent instructions need to change.
+To run the pipeline on a new topic, edit `config/config.md` and run `./utilities/run_pipeline.sh`. No agent instructions need to change.
 
 ---
 
@@ -135,7 +135,8 @@ To run the pipeline on a new topic, edit `config.md` and run `./utilities/run_pi
 ```
 agent_information_synthesis/
 │
-├── config.md                        # Activation key — edit this to change topics
+├── config/
+│   └── config.md                    # Activation key — edit this to change topics
 ├── utilities/                       # Pipeline scripts
 │   ├── run_pipeline.sh              # Runs all 4 agents sequentially
 │   └── archive_run.sh               # Archives current outputs to test_runs/run_N/
@@ -186,7 +187,7 @@ Summaries scoring below **3.5 overall** are automatically flagged. A retry hook 
 
 The pipeline is designed to be adapted. Some natural next steps:
 
-- **New topics** — edit `config.md` and run
-- **Different grading criteria** — update the rubric in `config.md`
-- **More documents** — increase the document count target in `config.md`
+- **New topics** — edit `config/config.md` and run
+- **Different grading criteria** — update the rubric in `config/config.md`
+- **More documents** — increase the document count target in `config/config.md`
 - **Web application** — the agent instructions translate directly into Claude API system prompts; the config schema maps cleanly to a form-based UI; Vercel + Next.js is the recommended stack for a broader deployment

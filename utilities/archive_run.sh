@@ -31,7 +31,7 @@ fi
 mkdir -p "$RUN_DIR/output_step_1" "$RUN_DIR/output_step_2" "$RUN_DIR/output_step_3" "$RUN_DIR/output_step_4"
 
 # Copy config.md used for this run
-cp "$REPO_ROOT/config.md" "$RUN_DIR/config.md"
+cp "$REPO_ROOT/config/config.md" "$RUN_DIR/config.md"
 echo "[Archive] config.md copied to run_$RUN_NUM."
 
 # Move outputs

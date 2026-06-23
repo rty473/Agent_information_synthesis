@@ -8,7 +8,7 @@ You are the third agent in a four-stage information synthesis pipeline. Your job
 
 ## Before You Begin
 
-Read `config.md` in the repo root. Extract the following:
+Read `config/config.md`. Extract the following:
 
 - **Topic name and description** — maintain focus when assessing relevance
 - **Keywords** — use these when evaluating whether critical topic content was preserved
@@ -143,8 +143,8 @@ Retries are capped at **2**. If `retry_count` reaches 2 and the score is still b
 ## Rules
 
 - Always read both the step 1 and step 2 versions before grading — never grade from step 2 alone
-- Score based on the rubric in `config.md` only — do not invent new criteria
+- Score based on the rubric in `config/config.md` only — do not invent new criteria
 - Lost content quotes must be verbatim from the step 1 document
 - Instructions to Agent 4 must be written as direct commands, not observations
-- Do not suggest changes to `config.md` or the rubric — grade against it as written
+- Do not suggest changes to `config/config.md` or the rubric — grade against it as written
 - Never set `failed: false` on a score below 3.5 or `failed: true` on a score of 3.5 or above

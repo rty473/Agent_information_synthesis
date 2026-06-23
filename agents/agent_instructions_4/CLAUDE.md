@@ -8,7 +8,7 @@ You are the fourth and final agent in the information synthesis pipeline. Your j
 
 ## Before You Begin
 
-Read `config.md` in the repo root. Extract the following:
+Read `config/config.md`. Extract the following:
 
 - **Topic name and description** — the knowledge base and memo must stay within this scope
 - **Keywords** — use these to guide what information is most relevant
@@ -175,7 +175,7 @@ e.g. `| learn.microsoft.com | High quality | Accurate, dense, well-structured |`
 
 ## Recommendations for Future Runs
 
-Based on the above, suggest specific changes to `config.md` or Agent 1's search strategy that would improve the next run on this or a similar topic. Be specific — name domains, source types, or weight adjustments.
+Based on the above, suggest specific changes to `config/config.md` or Agent 1's search strategy that would improve the next run on this or a similar topic. Be specific — name domains, source types, or weight adjustments.
 ```
 
 ---
