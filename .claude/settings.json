@@ -1,0 +1,14 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/hewittdevlieger/repos/agent_information_synthesis/.claude/scripts/retry_hook.sh"
+          }
+        ]
+      }
+    ]
+  }
+}
