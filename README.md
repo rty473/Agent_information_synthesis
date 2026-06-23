@@ -43,7 +43,7 @@ open config.md
 ./utilities/run_pipeline.sh
 ```
 
-Outputs will appear in `output_step_1/` through `output_step_4/` as each agent completes.
+Outputs will appear in `outputs/output_step_1/` through `outputs/output_step_4/` as each agent completes.
 
 ### Archive a Run
 
