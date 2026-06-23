@@ -1,0 +1,9 @@
+# macOS
+.DS_Store
+
+# Word temp files
+~$*.docx
+~$*.doc
+
+# Editor
+.vscode/
